@@ -1,0 +1,48 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.log
+
+# =========================
+# Virtual environment
+# =========================
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Data / Models (tự train sẽ ra, không cần push)
+# =========================
+data/
+models/
+
+# Nếu muốn giữ cấu trúc thư mục data rỗng thì cho phép thư mục nhưng bỏ file
+!data/.gitkeep
+!models/.gitkeep
+
+# =========================
+# Build / Packaging
+# =========================
+build/
+dist/
+*.egg

@@ -1,0 +1,21 @@
+# Deep Learning
+tensorflow>=2.12.0
+
+# Xử lý ảnh / video
+opencv-python
+opencv-python-headless
+
+# Toán học / xử lý dữ liệu
+numpy
+pandas
+
+# Vẽ biểu đồ
+matplotlib
+seaborn
+
+# Jupyter Notebook (nếu bạn chạy notebook)
+notebook
+jupyter
+
+# Tiện ích khác
+scikit-learn
