@@ -19,3 +19,4 @@ jupyter
 
 # Tiện ích khác
 scikit-learn
+joblib
