@@ -6,7 +6,7 @@ mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
 
-def run(use_flip=False):
+def run():
     cap = cv2.VideoCapture(0)  # mở camera mặc định
 
     # Thiết lập hand tracking
@@ -33,10 +33,15 @@ def run(use_flip=False):
 
             # Vẽ landmarks nếu có bàn tay
             if results.multi_hand_landmarks:
+                row = []
                 for hand_landmarks in results.multi_hand_landmarks:
+                    # Vẽ điểm ảnh và nối lại trên frame
                     mp_drawing.draw_landmarks(
                         frame, hand_landmarks, mp_hands.HAND_CONNECTIONS
                     )
+                    # Vẽ keypoints
+                    for landmark in hand_landmarks.landmark:
+                        row += [landmark.x, landmark.y, landmark.z]
 
             # Hiển thị
             cv2.imshow("HandLang - Mediapipe Demo", frame)
