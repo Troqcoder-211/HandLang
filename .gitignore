@@ -46,3 +46,9 @@ models/
 build/
 dist/
 *.egg
+
+
+# Ignore data & model files
+hand_sign_data.csv
+hand_sign_data_clean.csv
+hand_sign_model.pkl
